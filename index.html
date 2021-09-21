@@ -11,6 +11,7 @@
     <section class="main">
         <header>
             <a href="#"><img src="/images/logo.png" class="logo" alt=""></a>
+            <div class="toggle"></div>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
@@ -55,6 +56,13 @@
     </section>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script>
+    // toggle
+    const menutoggle= document.querySelector('.toggle');
+    const navigation= document.querySelector('.navigation');
+    menutoggle.onclick = function(){
+        menutoggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
     const slides = document.querySelectorAll('.slides');
     const prev = document.querySelector('.prev');
     const next = document.querySelector('.next');
